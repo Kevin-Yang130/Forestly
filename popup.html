@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Forestly</title>
+  <link rel="stylesheet" type="text/css" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Forestly</h1>
+    
+    <div class="prompt-section">
+      <textarea id="prompt-input" placeholder="What would you like to ask the LLMs?"></textarea>
+      <button id="submit-prompt">Ask LLMs</button>
+    </div>
+
+    <div class="llm-selector">
+      <h2>Selected Models</h2>
+      <div id="selected-llms" class="selected-llms">
+        <!-- Selected LLMs will appear here as bubbles -->
+      </div>
+      <button id="add-llm" class="add-llm-btn">+ Add Model</button>
+    </div>
+
+    <div id="llm-dropdown" class="llm-dropdown hidden">
+      <div class="llm-option" data-llm="chatgpt">ChatGPT</div>
+      <div class="llm-option" data-llm="claude">Claude</div>
+      <div class="llm-option" data-llm="gemini">Gemini</div>
+      <div class="llm-option" data-llm="deepseek">DeepSeek</div>
+    </div>
+
+    <div id="responses" class="responses-container">
+      <!-- LLM responses will be displayed here -->
+    </div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html> 
